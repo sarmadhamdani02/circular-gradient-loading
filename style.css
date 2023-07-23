@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+#main{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#back{
+    background-image: linear-gradient(to bottom right, rgb(0, 132, 255) 0%, rgb(255, 0, 128) 100%);
+    border-radius: 50%;
+    height: 5vw;
+    width: 5vw;
+    z-index: 98;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    animation: loading-rotation 0.5s infinite ease-out;
+    /* box-shadow: 0 0 1vw blueviolet, */
+                /* 0 0 1vw blueviolet,
+                0 0 2vw blueviolet; */
+}
+
+#front{
+    color: pink;
+    background-color: black;
+    border-radius: 50%;
+    height: 4.5vw;
+    width: 4.5vw;
+    z-index: 99;
+
+}
+
+@keyframes loading-rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(350deg);
+    }
+}
